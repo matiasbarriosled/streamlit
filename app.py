@@ -3,6 +3,7 @@ import streamlit as st
 import requests
 #import pandas_profiling
 #from streamlit_pandas_profiling import st_profile_report
+st.set_page_config(page_config="dark")
 
 if "current_page" not in st.session_state:
     st.session_state.current_page = "home"
