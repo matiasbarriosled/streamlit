@@ -3,9 +3,12 @@ FROM python:3.12
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+RUN apt-get update -y && \
+    apt-get install -y python3-pip build-essential libssl-dev libffi-dev python3-dev \
+    pip3 install --upgrade pip && \
+    pip3 install -r requirements.txt
 
 COPY . .
-EXPOSE 8501
+EXPOSE 50051
 
-ENTRYPOINT [ "streamlit","run","app.py",  "--theme.base", "dark", "--server.port=8501","--server.address=0.0.0.0"]
+CMD ["python3", "main.py"]
