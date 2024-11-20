@@ -6,6 +6,6 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 
 COPY . .
-EXPOSE 8080
+EXPOSE 8501
 
-ENTRYPOINT [ "streamlit","run","app.py",  "--theme.base", "dark", "--server.port=8080","--server.address=0.0.0.0"]
+ENTRYPOINT [ "streamlit","run","app.py",  "--theme.base", "dark", "--server.port=8501","--server.address=0.0.0.0"]
