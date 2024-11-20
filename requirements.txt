@@ -1,0 +1,6 @@
+pandas
+streamlit
+spacy
+nltk
+matplotlib
+gensim
