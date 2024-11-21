@@ -1,0 +1,30 @@
+
+#----------------------------------------------------------------------------------
+# Utiliza una imagen base que incluya Node.js y Python
+FROM node:16
+
+# Instalar dependencias para la compilación de paquetes de Python
+RUN apt-get update -y && \
+    apt-get install -y python3-pip build-essential libssl-dev libffi-dev python3-dev
+
+# Establece el directorio de trabajo
+WORKDIR /app
+
+# Instala grpc-web globalmente
+RUN npm install -g grpc-web
+
+# Copia las dependencias de Python y el código de la aplicación
+COPY requirements.txt .
+COPY . .
+
+# Instala las dependencias de Python
+RUN pi
+# Instala las dependencias de Python
+RUN pip3 install --upgrade pip && \
+    pip3 install -r requirements.txt
+
+# Expone el puerto en el que se ejecutará el servicio gRPC
+EXPOSE 50051
+
+# Ejecuta la aplicación
+CMD ["python3", "main.py"]
