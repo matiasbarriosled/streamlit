@@ -1,1 +1,7 @@
-env
+env/
+modules/__pycache__
+modules/tabs/__pycache__
+modules/functions/__pycache__
+archivos/
+modelo_positivo_negativo.pth
+lottiefiles.txt

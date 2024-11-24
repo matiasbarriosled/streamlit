@@ -1,0 +1,22 @@
+.stSelectbox {
+    background-color: #2a2536;
+    padding: 10px;
+    border-radius:10px;
+}
+
+.stImage img {
+    height: 200px !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    object-position: center;
+}
+
+.stImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stImage > div:nth-child(2) {
+    text-align: center;
+}

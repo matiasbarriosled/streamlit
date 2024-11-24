@@ -1,0 +1,14 @@
+embedUrl:
+https://lottie.host/embed/ff4e35af-6352-4623-af91-f03c9fcc9b72/HpVz35CKey.json
+
+embedHTML:
+<script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/ff4e35af-6352-4623-af91-f03c9fcc9b72/HpVz35CKey.json" background="transparent" speed="1" style="width: 300px; height: 300px" loop controls autoplay direction="1" mode="normal"></lottie-player>
+
+JSON:
+https://lottie.host/ff4e35af-6352-4623-af91-f03c9fcc9b72/HpVz35CKey.json
+
+optimizedJSON:
+https://lottie.host/749f303e-6fe3-4d87-a019-86c9a61c04e6/FwwvVKgaER.json
+
+dotLottie:
+https://lottie.host/96b6954f-1c65-4770-a72e-9342a649e304/ot5Qt7rZaB.lottie
